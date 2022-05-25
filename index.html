@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyEcommerce </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+ 
+        <!-- logo -->
+        <div class="logo">
+            <img src="img/logo.png" alt="logo" >
+        </div>
+        <label for="click">
+            <ion-icon name="menu-sharp" class="mobile-nav-icon"></ion-icon>
+        </label>
+
+
+        <div class="container">
+            <input type="checkbox" id="click">
+            <nav>
+
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#contact">About</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li> <a href="#" onclick="myfunctionacc()">Account</a></li>
+            <!-- <li><a href="#"><img src="img/cart.png" alt=""></a></li> -->
+        </ul>
+            </div>
+
+
+
+        </div>
+
+
+
+        <div class="goods">
+            
+            <div id="goods">
+               
+               <a href="#bankoffer"><li>🎁 <br> Topp offer</li></a> 
+
+              <a href="#watchoffer">  <li>
+                    🎧💻<br>Electronics
+                </li></a>
+             <a href="#book">   <li>
+                    📚<br>Books
+                </li></a>
+               <a href=""> <li>
+                    🛴<br>Beauty,Toys
+                </li></a>
+        
+
+            </div>
+    
+        </div>
+
+        <!-- img animation  -->
+        <div class="img-animation">
+
+        </div>
+
+
+
+
+        <!-- slide img  -->
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="img/gallery-1.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/gallery-2.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/gallery-3.jpg">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)"></a>
+            <a class="next" onclick="plusSlides(1)"></a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <!-- item detail -->
+        <br>
+        <div class="item-detail">
+            <br>
+            <h3>
+                <br>
+                T-Shirt
+                <br>
+                <del>888</del>
+                <br>
+                Rs:699 , Off:27%
+                <br>
+                Rating:4.1⭐ <br>
+            </h3>
+            <!-- <button class="addtocard" onclick="myfunctionaddtocard()">AddToCard </button> -->
+            <button class="buynow" onclick="myfunctionbuynow()">BuyNow</button>
+        </div>
+
+
+
+
+
+        <!-- detail leptop and camera  -->
+
+        <div class="lep-cam" id="product">
+
+            <div class="lep-eam-item" onclick="show()" id="btnID">
+                <img src="img/detil lep1.webp" alt="leptop" onclick="show()" id="btnID"> <br>
+                <h2> ASUS ROG Strix G15 <br>
+                    Core i5 10th Gen-<br>
+                    (8Gb/1TB SSD/WI....) <br> </h2>
+                <p>15.6 inch , Black plastic, 2.3 kg <br>
+                    Rating:4.5⭐ <br>
+                    <del>1,07990</del> <br>
+                    Rs:82,990 , Off:23% <br>
+
+                    <!-- <button class="addtocard" onclick="myfunctionaddtocard()">AddToCard </button> -->
+                    <button class="buynow" onclick="myfunctionbuynow()">BuyNow</button>
+                </p>
+            </div>
+
+
+            <!-- item that u show after click  -->
+            <!-- for laptop  -->
+            <div class="show-img" id="image">
+                <img src="img/detil lep1.webp" alt="" onclick="myfunction(this)">
+                <img src="img/detail lep2.webp" alt="" onclick="myfunction(this)">
+                <img src="img/detail lep3.webp" alt="" onclick="myfunction(this)">
+                <img src="img/detail lep4.webp" alt="" onclick="myfunction(this)">
+                <div class="lep1">
+                    <img src="img/detil lep1.webp" alt="" id="imgBox">
+                </div>
+                <br>
+                <h2>ASUS ROG Strix G15 Core i5 10th Gen - (8 GB/1 TB SSD/Windows 10 <br>
+                    Home/4 GB Graphics/NVIDIA GeForce GTX 1650 Ti/144 Hz) G512LI-HN059T <br>
+                    Gaming Laptop (15.6 inch, Black Plastic, 2.3 kg)</h2>
+                <p>Highlights ⏬🔽 <br>
+                    NVIDIA GeForce GTX 1650 Ti 15.6 inch Full HD LED Backlit Anti-glare <br>
+                    IPS-Level Display (250 nits Brightness, 1:1000 Contrast Ratio, 45% NTSC <br>
+                    Color Gamut, 67% sRGB, 50% Adobe, 170 Degree Viewing Angle, 144 Hz Refresh Rate) <br>Light Laptop
+                    without Optical Disk Drive Pre-installed Genuine Windows 10 OS <br>
+                    Description⏬🔽 <br>
+                    With this ASUS Gaming Laptop, you can enjoy using it for hours, thanks to its stunning design<br>
+                    and innovative features. It has super-narrow bezels that frame the display’s edges so that you<br>
+                    can get an expansive view of games, movies, and more. With the NVIDIA GeForce GTX 1650 Ti GPU,<br>
+                    you can be on top of your game as it ensures fast-paced and smooth gaming sessions. You can game<br>
+                    for long hours while your fingers remain cool, thanks to the well-ventilated WASD keys that ensure
+                    proper<br>
+                    airflow from the fan located below. To top it off, you will get a one-month subscription to the Xbox
+                    Game <br>
+                    Pass on the purchase of this laptop, so you can access over 100 high-quality PC games on Windows 10
+                    devices.</p>
+                <!-- <button class="addtocard" onclick="myfunctionaddtocard()">AddToCard </button> -->
+                <button class="buynow" onclick="myfunctionbuynow()">BuyNow</button>
+
+
+
+            </div>
+
+
+            <div class="lep-eam-item" onclick="show2()" id="btnID2">
+                <img src="img/detail cam1.webp" alt="camera" onclick="show2()" id="btnID2">
+                <br>
+                <h2>
+                    Canon EOS 200D ||DSLR <br>
+                    Camera EF -S18-55mm IS STM <br> </h2>
+                <p> -Effective Pixels : 24.1MP- <br>
+                    -Sensor Type : CMOS- <br>
+                    -Wifi Avilable- <br>
+                    -Full Hd- <br> <del>59,995</del> <br>
+                    Rating : 4.5 ⭐ <br> Rs:56,499 ,Off:5% <br>
+                    <!-- <button class="addtocard" onclick="myfunctionaddtocard()">AddToCard </button> -->
+                    <button class="buynow" onclick="myfunctionbuynow()">BuyNow</button>
+                </p>
+            </div>
+
+            <!-- detail camera  -->
+            <div class="show-img2" id="image2">
+                <img src="img/detail cam1.webp" alt="" onclick="myfunction2(this)">
+                <img src="img/detail cam4.webp" alt="" onclick="myfunction2(this)">
+                <!-- <img src="img/detail cam3.webp" alt="" onclick="myfunction2(this)"> -->
+                <img src="img/detail cam2.webp" alt="" onclick="myfunction2(this)">
+                <img src="img/detail cam3.webp" alt="" onclick="myfunction2(this)">
+
+                <div class="cam1">
+                    <img src="img/detail cam1.webp" alt="" id="imgBox2">
+                </div> <br>
+                <h2>Canon EOS 200D II DSLR Camera EF-S18-55mm IS STM (Black)</h2> <br>
+                <p>ighlights⏬🔽 <br>
+                    - Effective Pixels: 24.1 MP <br>
+                    - Sensor Type: CMOS <br>
+                    - WiFi Available <br>
+                    -Full HD <br>
+                    Important Note⏬🔽 <br>
+                    Memory Card is not included in this package. It needs to be purchased separately. <br>
+                    Description⏬🔽 <br>
+                    Is photography one of your passions? Bring home this EOS 200D II from Canon. <br>
+                    This is Canon’s lightest DSLR that features a vari-angle LCD touch screen.<br>
+                    It features a 24.1-megapixels APS-C CMOS sensor and a DIGIC 8 processor<br>
+                    that capture stunning images. The EOS 200D II also has a lot of other features<br>
+                    that make everyday photography a lot easier. <br>
+                    <!-- <button class="addtocard" onclick="myfunctionaddtocard()">AddToCard </button> -->
+                    <button class="buynow" onclick="myfunctionbuynow()">BuyNow</button>
+                </p>
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+    <!-- explore  -->
+
+
+
+    <div class="explore">
+        <h3>Best upcoming collection</h3>
+        <br>
+        <button onclick="myfunctionbtn()">Explore</button>
+    </div>
+
+
+
+
+    <!-- for brand  --> 
+    <div class="brand-from">
+        <h2>BRAND FROM</h2> <br>
+        <p>HNM , ZARA , HRX <br>
+          ROADSTAR</p>
+
+    </div>
+    <div class="brand">
+        
+        <img src="img/hnm1.jpg" alt="" id="brand" onclick="myfunctionhnm()">  
+        <img src="img/za1.jpg" alt="" id="brand"onclick="myfunctionzara()">
+        <img src="img/hrx1.jpg" alt="" id="brand"onclick="myfunctionhrx()"> 
+        <img src="img/ro1.jpg" alt="" id="brand"onclick="myfunctionroadstar()"> 
+
+
+
+    </div>
+   
+
+
+
+
+    <!-- img section  -->
+    
+      <div class="img-grid2"> 
+
+
+        <!-- first one  -->
+
+
+
+        <div class="lep-eam-item3" onclick="show3()" id="btnID3">
+            <img src="img/8.jpg" alt="leptop" onclick="show3()" id="btnID3"> <br>
+            <h2> <h2> Striped  T-Shirt <br>
+            </h2> 
+          
+              Rating:4.5⭐ <br>
+              <del>919</del> <br>
+              Rs:899 , Off:15% <br>
+
+                <!-- <button class="addtocard" onclick="myfunctionaddtocard()">AddToCard </button> -->
+                <button class="buynow" onclick="myfunctionbuynow()">BuyNow</button>
+            </p>
+        </div>
+
+
+
+        <!-- item that u show after click  -->
+        
+
+        
+        <div class="show-img3" id="image3">
+            <img src="img/product4.jpg" alt="" onclick="myfunction3(this)">
+            <img src="img/8.jpg" alt="" onclick="myfunction3(this)">
+            <img src="img/product-6.jpg" alt="" onclick="myfunction3(this)">
+            <img src="img/product4.jpg" alt="" onclick="myfunction3(this)">
+            <div class="lep3">
+                <img src="img/8.jpg" alt="" id="imgBox3">
+            </div>
+            <br><h2>Striped  T-Shirt</h2>
+            <p>
+                Description⏬🔽 <br>
+                Sleeve-
+                Half Sleeve, 
+                Fit-
+                Regular,
+                Fabric-
+                Cotton Blend, <br>
+                Pack of-
+                1,
+                Style Code-
+                AM-1020OL,
+                Ideal For-
+                Men,
+                Pattern-
+                Striped, <br>
+                Suitable For -
+                Western Wear,
+                Brand Fit-
+                Regular,
+                Sleeve Type-,
+                Narrow
+                Fabric Care-
+                Wash with like colors, Cold water wash only,
+                Generic Name-
+                T Shirts,
+                Country of Origin-
+                India,</p>
+
+
+            
+            <!-- <button class="addtocard" onclick="myfunctionaddtocard()">AddToCard </button> -->
+            <button class="buynow" onclick="myfunctionbuynow()">BuyNow</button>
+        </div> 
+
+
+
+
+    <!-- 2nd  -->
+
+
+
+   
+    <div class="lep-eam-item4" onclick="show4()" id="btnID4">
+        <img src="img/product-13.webp" alt="leptop" > <br>
+        <h2> Solid Men  Track Pants<br>
+        </h2>
+        <p>
+            Rating:4.2⭐ <br>
+            <del>1,510</del> <br>
+            Rs:1,199 , Off:26% <br>
+
+            <!-- <button class="addtocard" onclick="myfunctionaddtocard()">AddToCard </button> -->
+            <button class="buynow" onclick="myfunctionbuynow()">BuyNow</button>
+        </p>
+    </div> 
+
+
+
+
+
+
+    <!-- item that u show after click  -->
+    <!-- for laptop  -->
+
+
+
+     <div class="show-img4" id="image4">
+        <img src="img/product-12.jpg" alt="" onclick="myfunction4(this)">
+        <img src="img/product-13.webp" alt="" onclick="myfunction4(this)">
+        <!-- <img src="img/product-6.jpg" alt="" onclick="myfunction4(this)"> -->
+
+
+        
+        <img src="img/product-12.jpg" alt="" onclick="myfunction4(this)">
+        <div class="lep3">
+            <img src="img/product-3.jpg" alt="" id="imgBox4">
+        </div>   
+          <h2> Solid Men  Track Pants<br>
+        </h2>
+        Product Details🔽⏬ <br>
+Pockets-
+2 zipper pocket at side,
+Fabric Care-
+Normal machine wash or hand wash,
+Other Details-
+Track bottom for men,
+Sales Package-
+1 Track pant, <br>
+Other Dimensions-
+Sports track pants,
+Fabric-
+Lycra Blend,
+Pattern-
+Solid, 
+Premium quality fabric material is used to ensure comfortable and  <br>
+long lasting usage. Two pockets with zipper gives space to carry mobile <br>
+<br>and other valuables. Stretchable fabric makes it useful for running,<br>
+ gym and night wear. Atractive brand logo makes it point of attraction for <br>
+ your loved once. Perfect and acurate stitching by skilled workers gives you best <br>
+ value of your money. You can use it as joggers men, track pants for men regular fit, <br>
+ track pants with zipper pockets, lower for men, sports pant <br>
+        
+        <!-- <button class="addtocard" onclick="myfunctionaddtocard()">AddToCard </button> -->
+        <button class="buynow" onclick="myfunctionbuynow()">BuyNow</button>
+    </div> 
+
+
+
+
+
+
+    <!-- 3rd  -->
+     <!-- first one  -->
+
+
+
+     <div class="lep-eam-item5" onclick="show5()" id="btnID5">
+        <img src="img/gall1.jpg" alt="leptop" > <br>
+        <h2>Men Slim Fit Printed Casual Shirt </h2>
+        <p>
+            Rating:4.⭐ <br>
+            <del>981</del> <br>
+            Rs:785 , Off:25% <br>
+
+            <!-- <button class="addtocard" onclick="myfunctionaddtocard()">AddToCard </button> -->
+            <button class="buynow" onclick="myfunctionbuynow()">BuyNow</button>
+        </p>
+    </div>
+
+
+
+
+
+    <!-- item that u show after click  -->
+    <!-- for laptop  -->
+
+
+
+
+    <div class="show-img5" id="image5">
+        <img src="img/gall2.jfif" alt="" onclick="myfunction5(this)">
+        <img src="img/img.4.jpg" alt="" onclick="myfunction5(this)">
+       
+        <img src="img/gall1.jpg" alt="" onclick="myfunction5(this)">
+        <div class="lep3">
+            <img src="img/gall1.jpg" alt="" id="imgBox5">
+        </div> <h2>Men Slim Fit Printed Casual Shirt </h2><br><p> 
+            Product Details⏬🔽<br>
+
+Pack of-
+1,
+Style Code-
+ST223PK,
+Closure-
+Button,
+Fit-
+Slim,
+Fabric-
+Pure Cotton,<br>
+Sleeve-
+Full Sleeve & half ,
+Pattern-
+Printed,
+Fabric Care-
+Gentle Machine Wash,
+Suitable <For-></For->
+Western Wear,
+        </p>
+        <br>
+        
+        <!-- <button class="addtocard" onclick="myfunctionaddtocard()">AddToCard </button> -->
+        <button class="buynow" onclick="myfunctionbuynow()">BuyNow</button>
+    </div>
+    
+</div> 
+
+
+
+
+
+
+
+<!-- new start  -->
+   
+
+
+
+<div class="product" id="watchoffer">
+    <div class="product-small-img" >
+      <img src="img/fw2.webp" alt=""onclick="myfunctionsmall(this)">
+      <img src="img/fw3.webp" alt=""onclick="myfunctionsmall(this)">
+      <img src="img/fw4.webp" alt=""onclick="myfunctionsmall(this)">
+      <img src="img/fw5.webp" alt="" onclick="myfunctionsmall(this)" >
+
+
+
+    </div>
+    <div class="img-container">
+      <img src="img/fw1.jpg" alt="" id="fullboximg">
+    </div> 
+    <h2>Fire-Boltt Talk Bluetooth Calling Smartwatch  (Black Strap, 46)#JustHere</h2> <br>
+    <p>
+        Rating:4.1⭐ <br>
+        <del>9,999</del> <br>
+        Rs:3,499 , Off:65%
+        <br>
+        Description⏬🔽 <br>
+        The Fire-Boltt BSW004 smartwatch tracks your activities, relays your<br>
+         phone notifications, and also helps you monitor your health. This stylish<br>
+          and elegant timepiece uses Bluetooth technology to deliver notifications,<br>
+           including calls and messages <br>
+           <!-- <button class="addtocard" onclick="myfunctionaddtocard()">AddToCard </button>  -->
+           <button class="buynow" onclick="myfunctionbuynow()">BuyNow</button>
+    </p>
+  </div>
+
+
+
+<!-- discount  -->
+
+
+
+
+<div class="discount-details" id="bankoffer">
+    <h2> To Get Extra <br> 8-10% discount</h2>
+</div>
+<div class="discount">
+
+    <div class="sbi" id="bank" >
+    <h3>SBI Card  </h3> <br>
+    <ion-icon name="card-outline" class="cardicon"></ion-icon><br>
+    <button class="bankbtn"onclick="myfunctionhnm()">Shope </button>
+</div>
+<div class="icici" id="bank">
+    <h3>ICICI card</h3> <br>
+    <ion-icon name="card-outline"class="cardicon"></ion-icon><br>
+    <button class="bankbtn" onclick="myfunctionzara()">Shope </button>
+</div>
+
+<div class="Axis" id="bank">
+    <h3>Axis card</h3> <br>
+    <ion-icon name="card-outline"class="cardicon"></ion-icon> <br>
+    <button class="bankbtn" onclick="myfunctionhrx()">Shope </button>
+</div>
+</div>
+
+
+
+
+<div class="img-grid3">
+    <div class="img1">
+        <img src="img/product-7.jpg" alt=""> <br>
+        <h2>HRX by Hrithik Roshan 
+            Men Solid Ankle Length</h2> <br>
+            <p>
+                Rating:4.7⭐ <br>
+                <del>549</del> <br>
+                Rs:249 , Off:54% <br>  
+                     <!-- <button class="addtocard" onclick="myfunctionaddtocard()">AddToCard </button>  -->
+                <button class="buynow" onclick="myfunctionbuynow()">BuyNow</button>
+            </p>
+    </div>
+    <div class="img2">
+        <img src="img/product-5.jpg" alt=""> <br>
+        <h2>HRX by Hrithik Roshan  , Shoes</h2> <br> <p>
+            Rating:4.7⭐ <br>
+            <del>1,979</del> <br>
+            RS:1,499 , Off:32% <br>
+            <!-- <button class="addtocard" onclick="myfunctionaddtocard()">AddToCard </button>  -->
+                <button class="buynow" onclick="myfunctionbuynow()">BuyNow</button>
+        </p>
+    </div>
+    <div class="img3">
+        <img src="img/book.webp" alt="" id="book"> <br>
+        <h2>Something I Never Told You  (English, Paperback, Bhinder Shravya) <br></h2>
+        <p>
+            Rating:4.4⭐ <br>
+            <del>250</del> <br>
+            Rs:105 , Off:57% <br>
+            <!-- <button class="addtocard" onclick="myfunctionaddtocard()">AddToCard </button>  -->
+            <button class="buynow" onclick="myfunctionbuynow()">BuyNow</button>
+        </p>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="img-grid3">
+    <div class="img1">
+        <img src="img/earph1.jpg" alt=""> <br>
+        <h2>Earphone</h2> <br>
+            <p>
+                Rating:4.7⭐ <br>
+                <del>2,000</del> <br>
+                Rs:1,299 , Off:54% <br>  
+                     <!-- <button class="addtocard" onclick="myfunctionaddtocard()">AddToCard </button>  -->
+                <button class="buynow" onclick="myfunctionbuynow()">BuyNow</button>
+            </p>
+    </div>
+    <div class="img2">
+        <img src="img/exclusive.png" alt=""> <br>
+        <h2>Hand Band</h2> <br> <p>
+            Rating:4.7⭐ <br>
+            <del>1,979</del> <br>
+            RS:1,499 , Off:32% <br>
+            <!-- <button class="addtocard" onclick="myfunctionaddtocard()">AddToCard </button>  -->
+                <button class="buynow" onclick="myfunctionbuynow()">BuyNow</button>
+        </p>
+    </div>
+    <div class="img3">
+        <img src="img/img.2.jpg" alt=""> <br>
+        <h2>BAck Cover <br></h2>
+        <p>
+            Rating:4.4⭐ <br>
+            <del>447</del> <br>
+            Rs:399 , Off:12% <br>
+            <!-- <button class="addtocard" onclick="myfunctionaddtocard()">AddToCard </button>  -->
+            <button class="buynow" onclick="myfunctionbuynow()">BuyNow</button>
+        </p>
+    </div>
+</div>
+
+
+
+
+
+<div class="contact-media" id="contact">
+    <div class="help">
+        <h2>Help</h2> <br>Payments <br>
+        Shiping 
+    </div>
+    <div class="policy">
+        <h2>Policy</h2> <br>Return Policy <br> Security <br> Parivacy
+    </div>
+    <div class="contact">
+        <h2>Contact</h2> <br>
+        xxmostafaahmed@gmail.com
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.
+
+</body>
+
+</html>

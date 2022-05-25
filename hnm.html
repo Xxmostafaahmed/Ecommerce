@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H&M</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .zoom img{
+            height: 450px;
+            width: 450px;
+            margin: -40px;
+            margin-left: 50px;
+            border-radius: 6px;
+            border-style: solid;
+            border-color: blanchedalmond;
+            transition: transform .2s;
+            margin-top: 60px;
+
+        }
+        .zoom img:hover{
+            margin-top: 100px;
+            margin-left: 80px;
+            -ms-transform: scale(-1.5); 
+          -webkit-transform: scale(-1.5); 
+            transform: scale(-1.5);
+
+        }
+        .zoom h2 {
+            margin-left: 1300px;
+            margin-top: -700px;
+        }
+        .zoom p {
+            margin-left: 1300px;
+            font-size: 24px;
+            /* margin-top: -200px; */
+        }
+
+        /* responsibe for mobile  */
+        @media(max-width:400px){
+            .zoom img{
+                /* margin-left: 4px; */
+                height: 320px;
+                width: 230px;
+            }
+            .zoom img:hover{
+                height: 380px;
+                width: 250px;
+            }
+            .zoom h2{
+                margin-left: 15px;
+                margin-top: 180px;
+                display: fixed;
+            }
+            .zoom p{
+                margin-left: 15px;
+                margin-top: 100px;
+                display: fixed;
+            }
+            #small-img  img{
+                display: flex;
+                gap: 3px;
+                /* height: 90px; */
+                width: 90px; 
+                margin: 10px;
+                float: left;
+                margin-left: -60px;
+                
+            }
+        
+            #fullimg {
+                height: 350px;
+                width: 360px;
+                margin-left: -140px;
+                margin-top: -70px;
+                
+            }
+      
+        }
+        .small-img img{
+            height: 150px;
+            width: 120px;
+            gap: 18px;
+            margin-top: 900px;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: bisque;
+
+        }
+        .full-img img{
+            height: 550px;
+            width: 550px;
+            margin-top: -1000px;
+            border-radius: 15px;
+            border-style: solid;
+            border-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="zoom">
+        <div class="zoom-grid1">
+            <img src="img/hnm2.webp" alt="">
+            <img src="img/hnm3.webp" alt="">
+        </div>
+        <div class="zoom-grid2">
+            <img src="img/hnm4.webp" alt="">
+            <img src="img/hnm5.webp" alt="">
+        </div>
+        <div class="disc">
+            <h2>H&M <br>
+                Men  Relaxed Fit Printed Shirt</h2> <br>
+                <p>Rating:4.5⭐ <br>
+                <del>2,219</del> <br>
+               Rs:1,999 , Off:11%  <br>
+               PRODUCT DETAILS 🔽⏬ <br>
+               Shirt in a patterned cotton weave. Relaxed fit with a resort collar, <br>
+                French front and yoke at the back. Dropped shoulders, short sleeves<br>
+                 and a straight-cut hem with slits in the sides. <br> Fit-Relaxedfit <br>
+                 Composition-Cotton 100%  <br>Art. No.-1036741002<br>
+                 <!-- <button class="addtocard" onclick="myfunctionaddtocard()">AddToCard </button>  -->
+           <button class="buynow" onclick="myfunctionbuynow()">BuyNow</button></p> 
+        </div>
+    </div>
+
+    <!-- img 2 -->
+    <div class="product">
+        <div class="small-img" id="small-img">
+            <img src="img/hnmi2.webp" alt="" onclick="myfunction(this)">
+            <img src="img/hnmi3.webp" alt=""onclick="myfunction(this)">
+            <img src="img/hnmi4.jpg" alt=""onclick="myfunction(this)">
+            <img src="img/hnmi5.webp" alt=""onclick="myfunction(this)">
+
+
+
+        </div>
+        <div class="full-img">
+            <img src="img/hnmi1.webp" alt="" id="fullimg">
+        </div>
+        <h2>H&M <br>
+            Men Green Relaxed Fit Printed T-shirt</h2> <br>
+            <p>
+                Rating:4.7⭐<br>
+                <del>1,618</del> <br>
+                Rs:1,499 , Off:8% <br>
+                PRODUCT DETAILS ⏬🔽 <br>
+                Relaxed-fit T-shirt in soft cotton jersey with a print motif. Round, rib- <br>
+                 trimmed neckline, dropped shoulders and a straight-cut hem. <br>
+                 Material & Care <br>
+                100% Cotton ,
+                Machine Wash <br>
+                <!-- <button class="addtocard" onclick="myfunctionaddtocard()">AddToCard </button>  -->
+                <button class="buynow" onclick="myfunctionbuynow()">BuyNow</button>
+            </p>
+    </div>
+
+
+    <script>
+        function myfunctionbuynow(){
+            location.href="buynow.html"
+        }
+
+        function myfunction(smallimg){
+            var image =document. getElementById("fullimg")
+            image.src=smallimg.src;
+        }
+    </script>
+    
+</body>
+</html>

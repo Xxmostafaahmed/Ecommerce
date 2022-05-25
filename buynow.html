@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+ .dots  label input{
+        
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+ .container button{
+            margin-top: 140px;
+            margin-left: 140px;
+            color: black;
+            background-color: chocolate;
+            height: 30px;
+            width: 200px;
+
+           
+        }
+.element{
+       height: 500px;
+            width: 450px;
+            background-color: #FAEBD7;
+            margin-left: 500px;
+            margin-top: 50px;
+            border-radius: 11px;
+            border-color: black;
+ }
+      
+  .collapsible {
+  background-color:#FAEBD7;
+  color:black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+.addres{
+    height: 300px;
+     width: 450px;
+     background-color: #FAEBD7;
+     margin-left: 500px;
+      margin-top: 50px;
+      border-radius: 11px;
+      border-color: black;
+
+} .addres input{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 30px;
+    width: 400px;
+    margin-left: 20px;
+}
+.addres h2{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.down{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+@media(max-width:400px){
+    .addres {
+        height: 300px;
+        width: 300px;
+        margin-left: 40px;
+    }
+    .addres input {
+        height: 25px;
+        width: 200px;
+        /* margin-left: 40px; */
+    }
+    .element{
+        height: 300px;
+        width: 300px;
+        margin-left: 40px;
+
+    }
+    .container button{
+        margin-left: 70px;
+    }
+}
+    </style>
+</head>
+<body>
+    <form  action="https://formspree.io/f/mqknwqly"
+    method="POST">
+    <div class="addres"> 
+        <h2>Your Address</h2>
+        <input type="text" placeholder="Name" name="name" required>
+        <input type="text"placeholder="Lamd Mark" name="Land mark" required>
+        <input type="text" placeholder="email" name="email" required> <br>
+        <input type="number" placeholder="House No" name="House No" required>
+        <input type="number" placeholder="Ph No" name="ph no" required>
+        <label for="">
+            <input type="number" placeholder="qunt" name="qunt" required>
+            <input type="text" placeholder="size" name="size" required>
+
+        </label>
+
+    </div> 
+     <div class="down"> ⬇⬇⬇⬇</div>
+<div class="element">
+
+
+    
+
+    <div class="dots">
+        <button type="button" class="collapsible"> <label for="h3" > <input type="radio" required name="slide" id="h3" h3>Upi</h3>   </label></button>
+<div class="content">
+  <p><tr>
+      <td>
+          Enter your Upi 
+          <input type="text" placeholder="upi" name="upi">
+      </td>
+  </tr></p>
+</div>
+        <br>
+        <button type="button" class="collapsible"> <label for="h3" > <input type="radio"  name="slide" id="h3" h3>Wallets</h3>   </label></button>
+<div class="content">
+  <p><tr>
+      <td>
+          Amount 
+          <input type="number" placeholder="Amount" name="Amount">
+      </td>
+  </tr></p>
+</div>
+       
+        <br>
+        <div class="dots">
+            <button type="button" class="collapsible"> <label for="h3" > <input type="radio" name="slide" id="h3" h3>Cradit /Debit/ATM Cars</h3>   </label></button>
+    <div class="content">
+      <p>
+          <tr>
+          <td>
+            Holder name 
+              <input type="text" placeholder="name" name="holdername">
+          </td>
+      </tr>
+      <br>
+      <tr>
+        <td>
+          Expaire Date 
+            <input type="text" placeholder="  /" name="e datw">
+        </td>
+    </tr>
+    <br>
+    <tr>
+        <td>
+          Cvv 
+            <input type="number" placeholder="cvv" name="cvv">
+        </td>
+    </tr>
+    </p>
+    </div>
+      
+        <br>
+        
+    <div class="dots">
+        <button type="button" class="collapsible"> <label for="h3" > <input type="radio" name="slide" id="h3" h3>Net Banking</h3>   </label></button>
+<div class="content">
+  <p><tr>
+      <td>
+          Enter your Id 
+          <input type="text" placeholder="id" name="id">
+      </td>
+  </tr></p>
+</div>
+        <br>
+        <label for="h3"> <input type="radio" name="slide" id="h3"> Cash on Delivary(COD)</h3></label>
+        <br>
+       
+    <div class="dots">
+        <button type="button" class="collapsible"> <label for="h3" > <input type="radio" name="slide" id="h3" h3>EMI(Easy Installment)</h3>   </label></button>
+<div class="content">
+  <p><tr>
+      <td>
+          How many month
+          <input type="number" placeholder="emi" name="emi">
+      </td>
+  </tr></p>
+  <br><tr>
+      <td>
+          Enter your cadr number
+          <input type="number" placeholder="c no" name="c no">
+      </td>
+  </tr>
+  <br>
+  <tr>
+      <td>
+          Enterb Otp
+          <input type="number" placeholder="otp" name="otp">
+      </td>
+  </tr>
+</div>
+        <br>
+        
+    <div class="dots">
+        <button type="button" class="collapsible"> <label for="h3" > <input type="radio" name="slide" id="h3" h3>Gift Card</h3>   </label></button>
+<div class="content">
+  <p><tr>
+      <td>
+          Amount
+          <input type="number" placeholder="Amount" name="amount">
+      </td>
+  </tr></p>
+</div>
+
+    </div>
+
+
+    <div class="container">
+        <button class="container" >Procced</button>
+        <button onclick="myfunction()">GoBaack</button>
+    </div>
+</form>
+</div>
+
+
+
+    <script>
+        function myfunction() {
+            alert('Thank you for buy this product')
+            location.href='index.html'
+        }
+
+        var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+    </script>
+      
+    
+</body>
+</html>
